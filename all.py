@@ -9,8 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.wait import WebDriverWait
 
-tdate = "2024-07-20 "
-category="beauty parlour"
+tdate = " "
+category=""
 #urllink="https://www.google.com/search?q=schools+in+bhimavaram&oq=schools+&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDkyDggBEEUYJxg7GIAEGIoFMhMIAhAAGIMBGJECGLEDGIAEGIoFMg0IAxAAGJECGIAEGIoFMg0IBBAAGJECGIAEGIoFMg0IBRAAGJECGIAEGIoFMg0IBhAAGJIDGIAEGIoFMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGI8C0gELMTMzMTkyajBqMTWoAgmwAgE&sourceid=chrome&ie=UTF-8"
 #urllink="https://www.google.com/search?q=gyms+hyderabad&oq=gyms+&gs_lcrp=EgZjaHJvbWUqDQgCEAAYkgMYgAQYigUyBggAEEUYOTINCAEQABixAxjJAxiABDINCAIQABiSAxiABBiKBTINCAMQABiSAxiABBiKBTIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIKCAgQABixAxiABDIHCAkQABiABNIBCTkyMDVqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8"
 driver = webdriver.Chrome()
@@ -32,9 +32,9 @@ elements = driver.find_elements(By.CSS_SELECTOR, ".vwVdIc")
 
 
 
-portalid=9647
-memberid=1346
-parentportalid=508
+portalid=
+memberid=
+parentportalid=
 
 # Get the current date
 current_date = datetime.date.today()
@@ -43,11 +43,11 @@ current_date = datetime.date.today()
 formatted_date = current_date.strftime("%Y-%m-%d")
 
 mydb=sql.connect(
-   host="88.150.227.117",
-    user="nrktrn_web",
-    password="nrktrn11",
-    database="nrkindex_trn",
-    port="3306")
+   host="",
+    user="",
+    password="",
+    database="",
+    port="")
 
 mycursor = mydb.cursor()
 
